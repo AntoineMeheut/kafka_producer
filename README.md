@@ -1,19 +1,18 @@
 What is that
 ============
-POC produced to check the technical feasibility of writing in a
-topic Kafka of events from a java application
+Code produced to check the technical feasibility of writing in a
+Kafka topic events from a java application
 
 This project is the part that injects events into a Kafka topic.
-This code can be used as a stopper to inject events.
+
+This code can be used to inject events.
 
 The framework is based on
 =========================
-- springframework.boot: to save time and quickly create a
+- springframework.boot: to save time and quickly create an
 application executable on a ReadHat VM
-- org.apache.kafka: which allows to open the connection with the Kafka machine,
-to connect to topic and write events there
-- springframework.kafka: which saves time for everything
-concerns the use of Kafka in a Spring project in Java
+- org.apache.kafka: which allows to open connection with the Kafka machine, connect to topic and write events there
+- springframework.kafka: which saves time for everything concerns the use of Kafka in a Spring project
 
 
 The components of this project are
@@ -30,8 +29,7 @@ The components of this project are
 	* ctit: Type of intervention code, example: "110"
 	* msgH: Timestamp of transmission of the stream with only the time, example: "18.17.37.049316"
 	* topic: Indicates the name of the topic to which one wishes to inject the messages, example: "AME_AME.IN"
-- src/main/java/com/ame/messages/incoming/MessagesPublisher.java: class which
- creates the messages that will be sent to Kafka.
+- src/main/java/com/ame/messages/incoming/MessagesPublisher.java: class which creates the messages that will be sent to Kafka
 - src/main/java/com/ame/messages/config/ProducerChannelConfig.java: class who makes the connection to Kafka. There is no topic creation, because they are instantiated on the fly by sending messages
  
 The project opens on Eclipse or IntelliJ.
@@ -45,8 +43,7 @@ To execute the project, two possibilities
 =========================================
 Method 1
 --------
-- Copy the sources on a RHEL, place in the directory
-where is the pom of the project namely kafka_producer and type the command:
+- Copy the sources on a RHEL, place in the directory where is the pom of the project namely kafka_producer and type the command:
 
 `mvn clean install -U spring-boot:run`
     
