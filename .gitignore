@@ -1,3 +1,4 @@
+# Maven generated files #
 target/
 pom.xml.tag
 pom.xml.releaseBackup
@@ -9,3 +10,11 @@ buildNumber.properties
 .mvn/timing.properties
 # https://github.com/takari/maven-wrapper#usage-without-binary-jar
 .mvn/wrapper/maven-wrapper.jar
+# OS generated files #
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
