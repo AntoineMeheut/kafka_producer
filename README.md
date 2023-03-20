@@ -15,7 +15,7 @@
   <h3 align="center">Kafka Java Producer</h3>
 
   <p align="center">
-    The purpose of this program is to offer good programming practices in Java, when you want to build a program that can go to a production target. You can then look at how to structure a project and its various components. And inspire you to create a new project or improve the quality of existing projects.
+    Code produced to check the technical feasibility of writing in a Kafka topic events from a java application. This project is the part that injects events into a Kafka topic. This code can be used to inject events.
     <br />
     <a href="https://kafka.apache.org/documentation/"><strong>Explore Kafka docs</strong></a>
     <br />
